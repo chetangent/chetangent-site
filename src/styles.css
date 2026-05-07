@@ -150,11 +150,11 @@ img {
 
 .hero-intro-card {
   position: relative;
-  width: min(720px, calc(100% - 44px));
-  margin: -120px auto 0;
+  width: min(760px, 100%);
+  margin: 22px auto 0;
   padding: clamp(26px, 4vw, 42px);
   border-radius: var(--radius-xl);
-  background: rgba(255, 246, 236, 0.86);
+  background: rgba(255, 246, 236, 0.9);
 }
 
 .eyebrow,
@@ -328,7 +328,7 @@ img {
 
 .project-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(260px, 0.8fr);
+  grid-template-columns: minmax(0, 1fr);
   gap: 24px;
 }
 
@@ -431,8 +431,8 @@ img {
   }
 
   .hero-intro-card {
-    width: min(100% - 18px, 100%);
-    margin-top: -80px;
+    width: 100%;
+    margin-top: 18px;
     border-radius: 28px;
   }
 
