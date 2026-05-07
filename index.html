@@ -6,7 +6,7 @@
     <title>Gullapalli Chetan</title>
     <meta
       name="description"
-      content="Personal website of Gullapalli Chetan, also known as chetangent. A digital home for ideas, work, experiments, and useful links."
+      content="Personal website of Gullapalli Chetan, also known as chetangent. Projects, links, and a clean digital home."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,136 +23,120 @@
         <nav class="topnav" aria-label="Primary">
           <a href="#about">About</a>
           <a href="#links">Links</a>
-          <a href="#next">Next</a>
+          <a href="#projects">Projects</a>
         </nav>
       </header>
 
       <main id="home">
-        <section class="hero">
-          <div class="hero-copy">
+        <section class="hero-stage">
+          <div class="hero-photo-card">
+            <img src="./assets/hero-grab.jpg" alt="Gullapalli Chetan standing behind a Grab sign with arms open." />
+            <div class="hero-photo-overlay"></div>
+          </div>
+
+          <div class="hero-intro-card">
             <p class="eyebrow">aka chetangent</p>
             <h1>
               Gullapalli Chetan
-              <span>building useful, expressive things with a little edge and a lot of intent.</span>
+              <span>building useful things with personality, intent, and a bit of edge.</span>
             </h1>
             <p class="hero-text">
-              This is the first version of my corner of the internet. A personal
-              site for projects, experiments, ideas, and the places online where I
-              actually want to be found.
+              Singapore-based student, builder, and someone who likes making tools,
+              ideas, and interfaces feel a little more alive.
             </p>
             <div class="hero-actions">
-              <a class="button button-primary" href="https://www.linkedin.com/in/chetangent/" target="_blank" rel="noreferrer">LinkedIn</a>
-              <a class="button button-secondary" href="#links">Open links</a>
-            </div>
-            <div class="signal-row">
-              <div class="signal-card accent-strong">
-                <span class="signal-label">Handle</span>
-                <strong>@chetangent</strong>
-              </div>
-              <div class="signal-card">
-                <span class="signal-label">Base</span>
-                <strong>Singapore</strong>
-              </div>
-              <div class="signal-card accent">
-                <span class="signal-label">Future home</span>
-                <strong>chetangent.com</strong>
-              </div>
+              <a class="button button-primary" href="#projects">See projects</a>
+              <a class="button button-secondary" href="#links">Reach out</a>
             </div>
           </div>
-
-          <aside class="hero-panel">
-            <div class="panel-orbit">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <div class="panel-content">
-              <p class="panel-kicker">Current mode</p>
-              <h2>Designing, learning, shipping.</h2>
-              <p>
-                I like ideas that feel sharp and interfaces that feel alive.
-                Useful first, memorable second, and never flat.
-              </p>
-            </div>
-          </aside>
         </section>
 
-        <section class="story-grid" id="about">
-          <article class="card narrative-card">
+        <section class="content-grid">
+          <article class="card narrative-card" id="about">
             <p class="section-tag">About</p>
-            <h2>A personal site with room to grow.</h2>
+            <h2>A clean home base.</h2>
             <p>
-              Right now, this is a clean landing space: a simple place to say who
-              I am, leave the right links, and set the tone for the work and energy
-              I want to be associated with.
+              This site is a simple place to keep the essentials in one spot: who I
+              am, what I am building, and where to find me.
             </p>
             <p>
-              Over time, it can become a home for projects, writing, experiments,
-              and anything else worth keeping somewhere more permanent than a feed.
+              I care about thoughtful products, memorable experiences, and things
+              that feel good to use instead of just existing.
             </p>
           </article>
 
-          <article class="card quote-card">
-            <p class="section-tag">Approach</p>
-            <blockquote>
-              Build things people actually enjoy using.
-            </blockquote>
-          </article>
+          <section class="card links-panel" id="links">
+            <div class="section-heading compact-heading">
+              <div>
+                <p class="section-tag">Links</p>
+                <h2>Find me here.</h2>
+              </div>
+            </div>
+            <div class="links-stack">
+              <a class="social-link" href="https://www.linkedin.com/in/chetangent/" target="_blank" rel="noreferrer">
+                <span class="social-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="img"><path d="M6.94 8.5H3.56V20h3.38V8.5Zm-1.69-6A1.96 1.96 0 0 0 3.3 4.46c0 1.08.86 1.96 1.92 1.96h.03c1.09 0 1.97-.88 1.97-1.96A1.95 1.95 0 0 0 5.28 2.5h-.03ZM20.7 13.05c0-3.46-1.85-5.07-4.31-5.07-1.99 0-2.88 1.09-3.38 1.86V8.5H9.63c.04.89 0 11.5 0 11.5h3.38v-6.42c0-.34.02-.68.13-.92.27-.68.88-1.38 1.91-1.38 1.35 0 1.89 1.03 1.89 2.54V20h3.38v-6.95Z"/></svg>
+                </span>
+                <span class="social-copy">
+                  <strong>LinkedIn</strong>
+                  <small>/in/chetangent</small>
+                </span>
+              </a>
+
+              <a class="social-link" href="https://instagram.com/chetan.gent" target="_blank" rel="noreferrer">
+                <span class="social-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="img"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.75A4 4 0 0 0 3.75 7.75v8.5a4 4 0 0 0 4 4h8.5a4 4 0 0 0 4-4v-8.5a4 4 0 0 0-4-4h-8.5Zm8.88 1.5a1.12 1.12 0 1 1 0 2.25 1.12 1.12 0 0 1 0-2.25ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.75A3.25 3.25 0 1 0 12 15.25 3.25 3.25 0 0 0 12 8.75Z"/></svg>
+                </span>
+                <span class="social-copy">
+                  <strong>Instagram</strong>
+                  <small>@chetan.gent</small>
+                </span>
+              </a>
+
+              <a class="social-link" href="mailto:chetangips@gmail.com">
+                <span class="social-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="img"><path d="M3 5.5A2.5 2.5 0 0 1 5.5 3h13A2.5 2.5 0 0 1 21 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 18.5v-13Zm2 0V6l7 5.25L19 6v-.5a.5.5 0 0 0-.5-.5h-13a.5.5 0 0 0-.5.5Zm16 2.5-6.4 4.8a4.5 4.5 0 0 1-5.2 0L3 8v10.5a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5V8Z"/></svg>
+                </span>
+                <span class="social-copy">
+                  <strong>Email</strong>
+                  <small>chetangips@gmail.com</small>
+                </span>
+              </a>
+            </div>
+          </section>
         </section>
 
-        <section class="links-section" id="links">
+        <section class="projects-section" id="projects">
           <div class="section-heading">
-            <p class="section-tag">Links</p>
-            <h2>The relevant places.</h2>
+            <div>
+              <p class="section-tag">Projects</p>
+              <h2>Things I’ve built.</h2>
+            </div>
           </div>
-          <div class="link-grid">
-            <a class="link-card" href="https://www.linkedin.com/in/chetangent/" target="_blank" rel="noreferrer">
-              <span class="link-type">LinkedIn</span>
-              <strong>/in/chetangent</strong>
-              <p>Professional profile, experience, and the more structured version of me.</p>
+          <div class="project-grid">
+            <a class="project-card featured-project" href="https://chetangent.github.io/NUSCoursePlanner/" target="_blank" rel="noreferrer">
+              <span class="project-kicker">Live project</span>
+              <h3>NUS Course Planner</h3>
+              <p>
+                An interactive semester planning tool for NUS students with CAP,
+                S/U planning, requirement mapping, and module search.
+              </p>
+              <span class="project-link-text">Open project</span>
             </a>
 
-            <a class="link-card" href="https://instagram.com/chetan.gent" target="_blank" rel="noreferrer">
-              <span class="link-type">Instagram</span>
-              <strong>@chetan.gent</strong>
-              <p>Casual, visual, and a little more unfiltered.</p>
-            </a>
-
-            <a class="link-card" href="mailto:chetangips@gmail.com">
-              <span class="link-type">Email</span>
-              <strong>chetangips@gmail.com</strong>
-              <p>Best for ideas, collaborations, opportunities, or direct outreach.</p>
-            </a>
-          </div>
-        </section>
-
-        <section class="next-section" id="next">
-          <div class="section-heading">
-            <p class="section-tag">Next</p>
-            <h2>What this can become.</h2>
-          </div>
-          <div class="next-grid">
-            <article class="next-card">
-              <span>01</span>
-              <h3>Project archive</h3>
-              <p>Selected things I have built, shipped, or explored seriously.</p>
-            </article>
-            <article class="next-card">
-              <span>02</span>
-              <h3>Writing space</h3>
-              <p>Short essays, notes, reflections, and ideas worth keeping.</p>
-            </article>
-            <article class="next-card">
-              <span>03</span>
-              <h3>Interactive playground</h3>
-              <p>Small experiments that make the site feel unmistakably mine.</p>
+            <article class="project-card project-placeholder">
+              <span class="project-kicker">Next slot</span>
+              <h3>Add your next project here</h3>
+              <p>
+                This section is ready for more links whenever you want to add them.
+              </p>
             </article>
           </div>
         </section>
       </main>
 
       <footer class="footer">
-        <p>Built as the first pass of chetangent.com for Gullapalli Chetan.</p>
+        <p>Gullapalli Chetan</p>
         <button class="footer-link" id="copy-email" type="button">Copy email</button>
       </footer>
     </div>
