@@ -19,6 +19,36 @@ if (interactiveName) {
   interactiveName.setAttribute('aria-label', nameText.trim());
   interactiveName.textContent = '';
   interactiveName.insertAdjacentHTML('afterbegin', lettersMarkup);
+
+  const waveLetters = Array.from(interactiveName.querySelectorAll('.name-wave-letter'));
+
+  const updateWave = (pointerX) => {
+    waveLetters.forEach((letter) => {
+      if (letter.classList.contains('name-wave-space')) {
+        return;
+      }
+
+      const rect = letter.getBoundingClientRect();
+      const centerX = rect.left + rect.width / 2;
+      const distance = Math.abs(pointerX - centerX);
+      const normalized = Math.max(0, 1 - distance / 120);
+      const lift = Math.pow(normalized, 1.6);
+      letter.style.setProperty('--lift', lift.toFixed(3));
+    });
+  };
+
+  const resetWave = () => {
+    waveLetters.forEach((letter) => {
+      letter.style.setProperty('--lift', '0');
+    });
+  };
+
+  interactiveName.addEventListener('mousemove', (event) => {
+    updateWave(event.clientX);
+  });
+
+  interactiveName.addEventListener('mouseleave', resetWave);
+  interactiveName.addEventListener('touchend', resetWave);
 }
 
 if (copyEmailButton) {
