@@ -1,7 +1,7 @@
 const copyEmailButton = document.querySelector('#copy-email');
 const interactiveName = document.querySelector('.interactive-name');
 const revealTargets = document.querySelectorAll(
-  '.card, .project-card, .section-heading, .footer, .hero-photo-card'
+  '.card, .page-card, .project-card, .section-heading, .footer, .hero-photo-card, .page-hero'
 );
 
 if (interactiveName) {

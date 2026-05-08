@@ -252,25 +252,53 @@ img {
   min-height: 48px;
   padding: 0 20px;
   border-radius: 999px;
-  border: 1px solid transparent;
+  border: 1px solid rgba(82, 43, 10, 0.08);
   font-weight: 600;
   transition: transform 180ms ease, background 180ms ease, color 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
 }
 
 .button-primary:hover {
-  box-shadow: 0 16px 32px rgba(242, 106, 33, 0.3);
+  box-shadow: 0 18px 34px rgba(242, 106, 33, 0.28);
 }
 
 .button-primary {
-  background: linear-gradient(135deg, var(--accent), var(--accent-deep));
+  gap: 10px;
+  padding: 14px 22px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0)),
+    linear-gradient(135deg, var(--accent), var(--accent-deep));
   color: #fff7f0;
-  box-shadow: 0 12px 28px rgba(242, 106, 33, 0.26);
+  box-shadow: 0 14px 28px rgba(242, 106, 33, 0.24);
 }
 
 .button-secondary {
+  gap: 10px;
+  padding: 14px 22px;
   border-color: rgba(82, 43, 10, 0.12);
-  background: rgba(255, 255, 255, 0.5);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.76), rgba(255, 250, 243, 0.54));
   color: var(--text);
+  box-shadow: 0 12px 26px rgba(89, 45, 8, 0.08);
+}
+
+.button span,
+.button small {
+  display: block;
+}
+
+.button span {
+  font-size: 0.98rem;
+}
+
+.button small {
+  font-size: 0.74rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.76;
+}
+
+.button-secondary small {
+  color: var(--muted);
 }
 
 .content-grid {
@@ -360,6 +388,21 @@ img {
   font-size: 0.92rem;
 }
 
+.inline-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  color: var(--accent-deep);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.inline-link::after {
+  content: "↗";
+  font-size: 0.9em;
+}
+
 .projects-section {
   margin-bottom: 28px;
 }
@@ -412,6 +455,90 @@ img {
 
 .project-placeholder {
   background: rgba(255, 252, 247, 0.72);
+}
+
+.page-hero {
+  padding: clamp(28px, 4vw, 44px);
+}
+
+.page-hero-copy {
+  max-width: 720px;
+}
+
+.page-hero-copy h1 {
+  margin: 12px 0 14px;
+  font-family: "Instrument Serif", serif;
+  font-size: clamp(2.7rem, 6vw, 4.8rem);
+  line-height: 0.95;
+  font-weight: 400;
+}
+
+.page-hero-copy p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.page-layout {
+  display: grid;
+  gap: 24px;
+}
+
+.page-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(300px, 0.95fr);
+  gap: 24px;
+}
+
+.page-card {
+  border-radius: var(--radius-lg);
+  padding: 28px;
+}
+
+.page-card h2,
+.page-card h3 {
+  margin: 10px 0 14px;
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+}
+
+.page-card p,
+.page-card li {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.page-card ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.stack-list {
+  display: grid;
+  gap: 16px;
+}
+
+.stack-card {
+  border-radius: 22px;
+  border: 1px solid rgba(82, 43, 10, 0.1);
+  background: rgba(255, 255, 255, 0.56);
+  padding: 20px;
+}
+
+.stack-card h3,
+.stack-card p {
+  margin: 0;
+}
+
+.stack-card p {
+  margin-top: 10px;
+}
+
+.page-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 24px;
 }
 
 .reveal {
@@ -472,7 +599,8 @@ img {
 
 @media (max-width: 980px) {
   .content-grid,
-  .project-grid {
+  .project-grid,
+  .page-grid {
     grid-template-columns: 1fr;
   }
 
@@ -539,8 +667,14 @@ img {
     font-size: clamp(2.8rem, 15vw, 4.4rem);
   }
 
+  .button {
+    width: 100%;
+    justify-content: space-between;
+  }
+
   .card,
-  .project-card {
+  .project-card,
+  .page-card {
     padding: 22px;
     border-radius: 24px;
   }
