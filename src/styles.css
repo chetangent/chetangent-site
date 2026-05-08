@@ -262,7 +262,6 @@ img {
 }
 
 .button-primary {
-  gap: 10px;
   padding: 14px 22px;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0)),
@@ -272,33 +271,12 @@ img {
 }
 
 .button-secondary {
-  gap: 10px;
   padding: 14px 22px;
   border-color: rgba(82, 43, 10, 0.12);
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.76), rgba(255, 250, 243, 0.54));
   color: var(--text);
   box-shadow: 0 12px 26px rgba(89, 45, 8, 0.08);
-}
-
-.button span,
-.button small {
-  display: block;
-}
-
-.button span {
-  font-size: 0.98rem;
-}
-
-.button small {
-  font-size: 0.74rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  opacity: 0.76;
-}
-
-.button-secondary small {
-  color: var(--muted);
 }
 
 .content-grid {
