@@ -1,7 +1,25 @@
 const copyEmailButton = document.querySelector('#copy-email');
+const interactiveName = document.querySelector('.interactive-name');
 const revealTargets = document.querySelectorAll(
   '.card, .project-card, .section-heading, .footer, .hero-photo-card'
 );
+
+if (interactiveName) {
+  const nameText = interactiveName.textContent ?? '';
+  const lettersMarkup = Array.from(nameText)
+    .map((character, index) => {
+      if (character === ' ') {
+        return '<span class="name-wave-letter name-wave-space" aria-hidden="true"></span>';
+      }
+
+      return `<span class="name-wave-letter" style="--letter-index:${index}" aria-hidden="true">${character}</span>`;
+    })
+    .join('');
+
+  interactiveName.setAttribute('aria-label', nameText.trim());
+  interactiveName.textContent = '';
+  interactiveName.insertAdjacentHTML('afterbegin', lettersMarkup);
+}
 
 if (copyEmailButton) {
   copyEmailButton.addEventListener('click', async () => {
