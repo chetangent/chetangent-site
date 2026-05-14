@@ -547,9 +547,9 @@ img {
   font: inherit;
 }
 
-.footer-link.copied {
-  background: rgba(242, 106, 33, 0.12);
-  border-color: rgba(196, 71, 9, 0.24);
+.footer-note {
+  margin: 0;
+  color: var(--muted);
 }
 
 @keyframes cardRise {
